@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 400px; /* Increased width for scoreboard */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-section {
+  margin-bottom: 20px;
+}
+
+input {
+  margin-top: 10px;
+  padding: 10px;
+  width: 80%;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.results {
+  margin-top: 20px;
+}
+
+.player-result {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.dice {
+  font-size: 50px;
+  margin-top: 10px;
+  animation: roll 0.5s infinite;
+}
+
+.scoreboard {
+  margin-top: 20px;
+  text-align: left;
+  width: 80%; /* Set width for scoreboard */
+}
+
+.score {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+/* Keyframe for rolling animation */
+@keyframes roll {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
